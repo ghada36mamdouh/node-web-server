@@ -75,6 +75,12 @@ app.get('/about', (req,res) => {
 	});
 });
 
+app.get('/portfolio', (req,res) => {
+	res.render('portfolio.hbs', {
+		title: 'Portfolio',
+	});
+});
+
 app.get('/bad', (req,res)=>{
 	res.send({
 		errMessage: 'unable to connect.',
